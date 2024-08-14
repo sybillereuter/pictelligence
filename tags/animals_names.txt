@@ -1,0 +1,145 @@
+Actinopterygii
+Ailuropoda melanoleuca
+Albatross
+Anas platyrhynchos domesticus
+Anser anser
+Ant
+Anura
+Apis mellifera
+Araneae
+Asteroidea
+Balaenoptera musculus
+Bear
+Bee
+Beetle
+Bison
+Bison bison
+Bivalvia
+Blackbird
+Bos taurus
+Brachyura
+Butterfly
+Caelifera
+Canis lupus
+Canis lupus familiaris
+Capra aegagrus hircus
+Capreolus capreolus
+Cat
+Cervus elaphus
+Chicken
+Chimpanzee
+Cnidaria
+Coleoptera
+Columba livia
+Corvus corax
+Cow
+Crab
+Cranes
+Crocodile
+Crocodylus
+Cygnus
+Deer
+Delphinus
+Diomedea
+Dog
+Dolphin
+Dove
+Dragonfly
+Duck
+Elephant
+Elephas maximus
+Equus ferus caballus
+Equus zebra
+Erinaceus europaeus
+Falcon
+Falconidae
+Felis catus
+Ferret
+Fish
+Flounder
+Formicidae
+Fox
+Frog
+Gallus gallus domesticus
+Gastropoda
+Geometridae
+Giraffa camelopardalis
+Giraffe
+Goat
+Goose
+Gorilla
+Grasshopper
+Grus grus
+Hedgehog
+Horse
+Jellyfish
+Kangaroo
+Koala
+Lacertilia
+Lemur
+Lemuridae
+Lepidoptera
+Lion
+Lizard
+Lutra
+Macropus
+Moth
+Mouse
+Mus musculus
+Mussel
+Mustela
+Mustela putorius furo
+Odonata
+Oryctolagus cuniculus
+Ostrea
+Otter
+Ovis aries
+Owl
+Oyster
+Pan troglodytes
+Panda
+Panthera leo
+Panthera tigris
+Panthera uncia
+Parrot
+Penguin
+Phascolarctos cinereus
+Phoca vitulina
+Pig
+Pleuronectidae
+Psittacidae
+Rabbit
+Rat
+Rattus norvegicus
+Raven
+Rhincodon typus
+Sciurus
+Sea Lion
+Seal
+Serpentes
+Sheep
+Snail
+Snake
+Snow Leopard
+Spheniscidae
+Spider
+Squirrel
+Starfish
+Strigidae
+Sus scrofa
+Sus scrofa domesticus
+Swan
+Testudines
+Tiger
+Tortoise
+Turdus merula
+Ursus arctos
+Vespula
+Vulpes vulpes
+Wasp
+Weasel
+Whale
+Wild Boar
+Wolf
+Zalophus californianus
+Zebra
