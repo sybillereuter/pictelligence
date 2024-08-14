@@ -6,9 +6,14 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('wordnet')
+nltk_data_path = '/app/nltk_data'
+os.makedirs(nltk_data_path, exist_ok=True)
+
+nltk.download('punkt', download_dir='/app/nltk_data')
+nltk.download('averaged_perceptron_tagger', download_dir='/app/nltk_data')
+nltk.download('wordnet', download_dir='/app/nltk_data')
+
+nltk.data.path.append('/app/nltk_data')
 
 lemmatizer = WordNetLemmatizer()
 
