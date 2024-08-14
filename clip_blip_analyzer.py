@@ -1,7 +1,8 @@
 import warnings
-from transformers import BlipForConditionalGeneration, AutoProcessor, CLIPModel, CLIPProcessor
-from PIL import Image
 import torch
+from PIL import Image
+from transformers import BlipForConditionalGeneration, AutoProcessor, CLIPModel, CLIPProcessor
+
 
 warnings.filterwarnings("ignore", message="Using the model-agnostic default `max_length`")
 
@@ -25,7 +26,6 @@ tag_list = load_tags(tag_file_path)
 
 
 def generate_caption(image: Image.Image):
-
     inputs = blip_processor(image, return_tensors="pt")
 
     out = blip_model.generate(**inputs,
@@ -39,27 +39,20 @@ def generate_caption(image: Image.Image):
     return caption
 
 
-def generate_tags(image: Image.Image, description: str, num_tags=10):
-    image = image.resize((256, 256))
-    inputs = clip_processor(text=[description] + tag_list, images=image, return_tensors="pt", padding=True)
+def generate_tags(image: Image.Image, description: str, num_tags=10, tags=tag_list):
+    resized_image = image.resize((256, 256))
+    inputs = clip_processor(
+        text=[description] + tags,
+        images=resized_image,
+        return_tensors="pt",
+        padding=True
+    )
 
     with torch.no_grad():
         outputs = clip_model(**inputs)
 
-    logits_per_image = outputs.logits_per_image
-    probs = logits_per_image.softmax(dim=1)[0, 1:]
-
-    top_probs, top_indices = probs.topk(num_tags)
-    top_tags = [tag_list[idx] for idx in top_indices]
+    probs = outputs.logits_per_image.softmax(dim=1)[0, 1:]
+    top_tags = [tags[idx] for idx in probs.topk(num_tags).indices]
 
     return top_tags
 
-
-if __name__ == "__main__":
-    image_path = "sample_photos/swarm.jpg"
-
-    caption = generate_caption(Image.open(image_path))
-    print("Generated Caption:", caption)
-
-    tags = generate_tags(Image.open(image_path), caption)
-    print("Generated Tags:", tags)

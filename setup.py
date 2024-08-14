@@ -6,9 +6,9 @@ with open('requirements.txt') as f:
 
 setup(
     name='pictelligence',
-    version='1.0.0',
-    packages=find_packages('src'),
-    package_dir={'': 'src'},
+    version='1.0.1',
+    packages=find_packages(),
     install_requires=install_requires,
-    package_data={'pictelligence': ['templates/*.html']}
+    package_data={'pictelligence': ['tags/*.txt', 'sample_photos/*']},
+    include_package_data=True
 )
