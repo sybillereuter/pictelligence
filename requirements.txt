@@ -6,3 +6,4 @@ nltk~=3.9
 pillow~=10.4.0
 rdflib~=7.0.0
 gradio_client~=1.8.0
+pydantic==2.10.6
