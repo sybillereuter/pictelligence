@@ -1,12 +1,13 @@
 ---
-title: Pictelligence
+title: Pictelligence V2
 emoji: 🌍
-colorFrom: red
-colorTo: green
+colorFrom: yellow
+colorTo: gray
 sdk: gradio
-sdk_version: 5.23.2
+sdk_version: 5.25.2
 app_file: app.py
 pinned: false
+short_description: Generate curated tags for your photos!
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
