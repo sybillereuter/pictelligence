@@ -1,4 +1,4 @@
-name: Keep pictelligence Awake
+name: Keep pictelligence awake
 
 on:
   schedule:
