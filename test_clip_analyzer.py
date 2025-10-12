@@ -1,12 +1,15 @@
 import unittest
+import requests
+from io import BytesIO
 from PIL import Image
 import clip_analyzer
 
 
 class TestGenerateTags(unittest.TestCase):
     def setUp(self):
-        image_path = "sample_photos/birbs.jpg"
-        self.image = Image.open(image_path)
+        url = "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/birbs.jpg"
+        response = requests.get(url)
+        self.image = Image.open(BytesIO(response.content))
         self.number_of_tags = 30
         self.tags = clip_analyzer.generate(self.image, self.number_of_tags)
 

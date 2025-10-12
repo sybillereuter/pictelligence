@@ -2,11 +2,11 @@ import gradio as gr
 from clip_analyzer import generate
 
 example_images = [
-    "sample_photos/kediler.jpg",
-    "sample_photos/swayambhu.jpg",
-    "sample_photos/chattydolls.jpg",
-    "sample_photos/self.jpg",
-    "sample_photos/birbs.jpg"
+    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/kediler.jpg",
+    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/swayambhu.jpg",
+    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/chattydolls.jpg",
+    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/self.jpg",
+    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/birbs.jpg"
 ]
 
 
