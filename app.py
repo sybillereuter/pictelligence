@@ -1,13 +1,17 @@
 import gradio as gr
+from datasets import load_dataset
+import os
 from clip_analyzer import generate
 
-example_images = [
-    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/kediler.jpg",
-    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/swayambhu.jpg",
-    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/chattydolls.jpg",
-    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/self.jpg",
-    "https://huggingface.co/datasets/s-reuter/sample-photos/resolve/main/birbs.jpg"
-]
+dataset = load_dataset("s-reuter/sample-photos")
+os.makedirs("sample_photos", exist_ok=True)
+
+example_images = []
+
+for i, item in enumerate(dataset["train"]):
+    path = f"sample_photos/image_{i}.jpg"
+    item['image'].save(path)
+    example_images.append(path)
 
 
 def process_image(image):
