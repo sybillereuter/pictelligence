@@ -9,3 +9,4 @@ gradio_client~=1.8.0
 pydantic==2.10.6
 datasets~=4.2.0
 requests~=2.32.3
+pandas~=2.2.3
