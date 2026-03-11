@@ -23,11 +23,7 @@ iface = gr.Interface(
     fn=process_image,
     inputs=gr.Image(type="pil"),
     outputs=[
-        gr.Textbox(
-            label="Tags",
-            lines=8,
-            max_lines=20
-        )
+        gr.Textbox(label="Tags")
     ],
     title="Pictelligence :: AI Photo Tagger",
     description="Upload a photo to generate tags or use one of the examples below:",

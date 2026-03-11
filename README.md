@@ -4,9 +4,8 @@ emoji: 🖼️
 colorFrom: yellow
 colorTo: gray
 sdk: gradio
-sdk_version: 6.9.0
+sdk_version: 5.25.2
 app_file: app.py
-python_version: 3.11
 pinned: false
 short_description: Generate curated tags for your photos!
 ---
