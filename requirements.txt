@@ -1,9 +1,9 @@
 setuptools~=70.0.0
 transformers~=4.50.0
-torch~=2.7.0
+torch>=2.0.0,<2.8.0
 gradio>=5.23.2
 nltk~=3.9
-pillow~=10.4.0
+pillow>=12.1.1
 rdflib~=7.0.0
 gradio_client~=1.8.0
 pydantic==2.10.6
