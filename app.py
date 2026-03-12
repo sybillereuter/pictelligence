@@ -18,7 +18,8 @@ def process_image(image):
     tags = generate(image, 30)
     return ", ".join(tags)
 
-
+# todo || update to gradio 6 as soon as it's stable (6.9.0 had issues with input images)
+# todo || so we can use safe pillow version (>=12.1.1)
 iface = gr.Interface(
     fn=process_image,
     inputs=gr.Image(type="pil"),
